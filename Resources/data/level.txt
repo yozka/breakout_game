@@ -1,0 +1,147 @@
+## Описание уровня
+##
+##
+## BB - большой синий блок
+## RR - большой красный блок
+## GG - большой зеленый блок
+## EE - большой серый блок
+## PP - большой пурпурный блок
+## YY - большой желтый блок
+##
+## Бонусы
+## 
+## +l - увеличить количество жизней
+## +f - полностью заполнить всю линию жизней
+## +p - увеличить ракетку 
+## +q - уменьшить ракетку
+## +b - удвоитель шаров
+## +s - уменьшить скорость шаров
+## +w - оружие
+##
+##
+
+
+|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|
+|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|
+|BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |
+|  |BB|  |BB|  |BB|  |  |  |BB|  |BB|  |BB|  |BB|
+|BB|  |BB|  |BB|  |BB|+p|BB|  |BB|  |BB|  |BB|  |
+|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|
+|RR|RR|RR|RR|RR|RR|PP|PP|RR|RR|RR|RR|RR|RR|PP|PP|
+|YY|YY|GG|GG|RR|PP|  |  |PP|GG|YY|YY|GG|PP|  |  |
+|YY|GG|GG|RR|PP|  |  |  |  |PP|GG|GG|PP|  |  |  |
+|GG|GG|RR|PP|  |  |  |  |  |  |PP|PP|  |  |  |  |
+|RR|RR|PP|  |  |  |  |  |  |  |  |  |  |  |  |  |
+|RR|PP|  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|PP|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |+w|EE|EE|+b|  |  |  |  |  |  |
+|  |  |  |  |  |  |EE|EE|EE|EE|  |  |  |  |  |  |
+|  |  |  |  |  |  |EE|EE|EE|EE|  |  |  |  |  |  |
+|  |  |  |  |  |  |  |EE|EE|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|BB|  |  |  |  |  |  |  |  |  |  |  |  |  |  |BB|
+|BB|BB|  |  |  |  |  |  |  |  |  |  |  |  |BB|BB|
+|YY|BB|BB|  |  |  |  |  |  |  |  |  |  |BB|BB|YY|
+|YY|YY|BB|BB|  |  |  |  |  |  |  |  |BB|BB|YY|YY|
+|RR|YY|YY|BB|BB|  |  |  |  |  |  |BB|BB|YY|YY|RR|
+|RR|RR|YY|YY|BB|BB|  |  |  |  |BB|BB|YY|YY|RR|RR|
+|GG|RR|RR|YY|YY|BB|BB|+s|+s|BB|BB|YY|YY|RR|RR|GG|
+|GG|GG|RR|RR|YY|YY|BB|BB|BB|BB|YY|YY|RR|RR|GG|GG|
+|GG|GG|GG|RR|RR|YY|YY|BB|BB|YY|YY|RR|RR|GG|GG|GG|
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|+w|  |  |  |  |  |  |  |  |  |  |  |  |  |  |+w|
+|GG|GG|GG|RR|RR|YY|YY|BB|BB|YY|YY|RR|RR|GG|GG|GG|
+|GG|GG|RR|RR|YY|YY|BB|BB|BB|BB|YY|YY|RR|RR|GG|GG|
+|GG|RR|RR|YY|YY|BB|BB|  |  |BB|BB|YY|YY|RR|RR|GG|
+|RR|RR|YY|YY|BB|BB|  |  |  |  |BB|BB|YY|YY|RR|RR|
+|RR|YY|YY|BB|BB|  |  |  |  |  |  |BB|BB|YY|YY|RR|
+|YY|YY|BB|BB|  |  |  |  |  |  |  |  |BB|BB|YY|YY|
+|YY|BB|BB|  |  |  |  |  |  |  |  |  |  |BB|BB|YY|
+|BB|BB|  |  |  |  |  |  |  |  |  |  |  |  |BB|BB|
+|BB|  |  |  |  |  |  |  |  |  |  |  |  |  |  |BB|
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |+l|+b|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |+w|  |  |  |  |PP|PP|  |  |+p|  |+s|  |  |
+|  |  |RR|RR|RR|  |  |PP|PP|  |  |RR|RR|RR|  |  |
+|  |  |RR|YY|RR|  |  |PP|PP|  |  |RR|YY|RR|  |  |
+|  |  |RR|RR|RR|  |  |PP|PP|  |  |RR|RR|RR|  |  |
+|  |  |YY|YY|YY|  |  |PP|PP|  |  |YY|YY|YY|  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |PP|PP|  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |+f|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |YY|YY|  |  |  |  |  |  |  |
+|BB|  |  |  |  |  |YY|YY|YY|YY|  |  |  |  |+w|BB|
+|BB|BB|  |  |  |  |YY|YY|YY|YY|  |  |  |  |BB|BB|
+|BB|BB|  |  |  |  |  |YY|YY|  |  |  |  |  |BB|BB|
+|BB|  |  |  |  |  |  |  |  |  |  |  |  |  |  |BB|
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |+p|RR|  |  |  |  |RR|  |  |  |  |  |
+|  |  |  |  |RR|RR|RR|  |  |RR|RR|RR|  |  |  |  |
+|  |  |  |  |RR|RR|RR|  |  |RR|RR|RR|  |  |  |  |
+|  |  |+w|  |  |RR|  |  |  |  |RR|  |  |+p|  |  |
+|  |  |RR|  |  |  |  |  |  |  |  |  |  |RR|  |  |
+|  |RR|RR|RR|  |  |  |  |  |  |  |  |RR|RR|RR|  |
+|  |RR|RR|RR|  |  |  |  |  |  |  |  |RR|RR|RR|  |
+|  |  |RR|  |  |  |  |  |  |  |  |  |  |RR|  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |+l|  |  |  |  |  |  |+b|  |  |  |+b|  |  |+b|
+|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|
+|PP|  |PP|  |PP|  |  |  |PP|  |PP|  |PP|  |PP|  |
+|  |RR|  |RR|  |RR|+w|RR|  |RR|  |RR|  |RR|  |RR|
+|YY|  |YY|  |YY|  |YY|  |YY|  |YY|  |YY|  |YY|  |
+|  |EE|  |EE|  |EE|  |EE|  |EE|  |EE|  |EE|  |EE|
+|GG|  |GG|  |GG|  |GG|  |GG|  |GG|  |GG|  |GG|  |
+|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|  |BB|
+|PP|  |PP|  |PP|  |PP|  |PP|  |PP|  |PP|  |PP|  |
+|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|PP|
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |+s|+b|  |+l|+q|  |+q|+b|  |+q|+w|  |+f|+q|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |BB|BB|  |RR|RR|  |YY|YY|  |GG|GG|  |PP|PP|  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|+f|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|BB|GG|EE|PP|YY|GG|EE|  |  |EE|GG|YY|PP|EE|GG|BB|
+|BB|BB|GG|EE|PP|YY|GG|+w|+p|GG|YY|PP|EE|GG|BB|BB|
+|BB|BB|BB|GG|EE|PP|YY|GG|GG|YY|PP|EE|GG|BB|BB|BB|
+|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|BB|
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |BB|BB|BB|BB|  |  |  |  |  |  |
+|  |  |  |  |  |BB|RR|RR|RR|RR|BB|  |  |  |  |  |
+|  |  |  |  |BB|RR|YY|YY|YY|YY|RR|BB|  |  |  |  |
+|  |  |  |BB|RR|YY|  |  |  |  |YY|RR|BB|  |  |  |
+|  |  |  |BB|RR|YY|+l|+w|+b|+p|YY|RR|BB|  |  |  |
+|  |  |  |  |BB|RR|YY|YY|YY|YY|RR|BB|  |  |  |  |
+|  |  |  |  |  |BB|RR|RR|RR|RR|BB|  |  |  |  |  |
+|  |  |  |  |  |  |BB|BB|BB|BB|  |  |  |  |  |  |

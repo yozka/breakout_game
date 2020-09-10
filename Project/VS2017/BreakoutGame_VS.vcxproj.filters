@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{897ef5b7-f9ca-403a-9288-841a152eed97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils">
+      <UniqueIdentifier>{6b280202-ffdf-4e61-a85a-c58edfa54a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\MathUtils">
+      <UniqueIdentifier>{2eff0373-b08f-47fa-8aef-05a9fd368dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\Properties">
+      <UniqueIdentifier>{037217eb-6d05-4f6e-8b16-de4abc7d04c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\Point">
+      <UniqueIdentifier>{7bb6c23c-3cab-40cd-a5bd-ed5ff09e5d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\Random">
+      <UniqueIdentifier>{e6e63ed8-1626-45d3-8df7-6823e4179182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\Rect">
+      <UniqueIdentifier>{6b8872bf-b1fb-4709-9930-26d505fc4f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utils\String">
+      <UniqueIdentifier>{4b996af3-9f99-4c98-83c0-12e445ad7ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\!Device">
+      <UniqueIdentifier>{beec0f88-5d8e-46bf-8b37-e9b272687d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\!Device\Render">
+      <UniqueIdentifier>{d964d5c8-a70c-4bc7-b6ce-3ad45ef3a842}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\base_Properties.cpp">
+      <Filter>Source\Utils\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\base_Random.cpp">
+      <Filter>Source\Utils\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\base_String.cpp">
+      <Filter>Source\Utils\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Device.cpp">
+      <Filter>Source\!Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Render.cpp">
+      <Filter>Source\!Device\Render</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\ecs">
+      <UniqueIdentifier>{d112c5db-78cc-4918-97ed-3da31e3d9173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Actor">
+      <UniqueIdentifier>{c7283742-a231-4803-9a99-34cb9853c4ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Components">
+      <UniqueIdentifier>{2bebf4a2-0205-40f0-8cc5-72963eb10984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Container">
+      <UniqueIdentifier>{86410b80-7e0e-4585-8b14-7c30d6597550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Systems">
+      <UniqueIdentifier>{f69c0aea-70a4-4c65-aafc-5d5504d7a7d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Systems\SystemUpdate">
+      <UniqueIdentifier>{c45caf2d-b62a-43da-a839-5717368621e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ArcanoidScena">
+      <UniqueIdentifier>{2364d9c2-71e3-4b0c-93da-108f537531c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components">
+      <UniqueIdentifier>{50aa6d7e-d4fd-4fe0-bd56-af440a94d65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders">
+      <UniqueIdentifier>{4344902e-1a44-4bd2-be70-0e913f2e9cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\BuildLevel">
+      <UniqueIdentifier>{4f1bddb0-f6ac-4f6e-925c-40787544df5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Systems">
+      <UniqueIdentifier>{80b1ff9a-cbf9-481b-854d-798c9b43d7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall">
+      <UniqueIdentifier>{bae1daf9-0512-4b23-bbca-4b5926a88036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_Shape">
+      <UniqueIdentifier>{d9ec2fda-da24-4064-b3f6-183b7949c923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_Shape\Circle">
+      <UniqueIdentifier>{4abf3c8a-f2db-48a5-a534-fdd54d26a722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_Shape\Polygon">
+      <UniqueIdentifier>{8b9664c2-c623-46d4-acdd-bb7c055c5f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_Body">
+      <UniqueIdentifier>{321be385-dbdf-4b05-ad1a-522103146aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\SystemPhysics">
+      <UniqueIdentifier>{06adb412-5b72-4892-b900-e6b36af96988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Manifold">
+      <UniqueIdentifier>{96b2a04b-1fb5-4d67-ac08-2656b28bd635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Systems\RenderDraw">
+      <UniqueIdentifier>{8fd91441-b951-44ec-a878-9bd88531dd3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Collision">
+      <UniqueIdentifier>{1c8744db-6ee7-4489-a10e-00afce5234af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_Collision">
+      <UniqueIdentifier>{f06cb8a7-f0bd-435c-ab01-f4acd5c6985b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay">
+      <UniqueIdentifier>{c7865e50-3c62-4092-a3ee-d42f39c55ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics">
+      <UniqueIdentifier>{329f5276-b0fb-49f4-a7d5-cd03c7b413be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\Sprite">
+      <UniqueIdentifier>{0ba60c2a-3062-40c9-b114-d95148c31e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\Draw">
+      <UniqueIdentifier>{e4c98ca1-3943-408d-9387-29b3833d63fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\Geometry">
+      <UniqueIdentifier>{a3ee80c7-0225-493a-b2fc-6e417baf6ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\Geometry\GeometryData">
+      <UniqueIdentifier>{acda4613-8629-494b-8fb5-26da7cc92cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Systems\Input">
+      <UniqueIdentifier>{63aff89f-5bb7-4ced-b014-0e3edd0e5e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Systems\RenderDebug">
+      <UniqueIdentifier>{4e267796-d769-47fd-ae4c-c825aab1715f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\PhysicsBall\Component_PhysicsDebug">
+      <UniqueIdentifier>{1140cfca-50ad-4bb4-8dd8-be66cb7ae6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ecs\Utils">
+      <UniqueIdentifier>{db822a93-5efb-430f-a87a-1f93c02bfb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Player">
+      <UniqueIdentifier>{6dcffc8c-0f9f-4b68-93f3-b4cdc69b0c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Player\Paddle">
+      <UniqueIdentifier>{1edb5715-c8cb-4b85-806f-a8f415ec2e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Player\PlayerControls">
+      <UniqueIdentifier>{b0fa346b-02f5-4a02-a6e0-09d1a1accd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Player\Cling">
+      <UniqueIdentifier>{edf8a161-43ea-4a0a-9679-4f3ed3bbea27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\DestroyOutArea">
+      <UniqueIdentifier>{8e524acd-c668-43e2-b0bf-6fde339a5773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\LivesToBall">
+      <UniqueIdentifier>{4e7fcdaa-198f-43e4-9384-d0387ed2bd39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Balls">
+      <UniqueIdentifier>{529278b0-4e9b-4087-94c8-997deb4059f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Balls\Ball">
+      <UniqueIdentifier>{812d23d5-0bfa-4c70-93ad-e7149beedbb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Balls\CLLSpeedBall">
+      <UniqueIdentifier>{280797a5-2cf1-45df-9bf6-96cc801f8a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\BuildMenu">
+      <UniqueIdentifier>{b4c92346-e95b-425b-a851-3ab0d577fc0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\CreatorWidget">
+      <UniqueIdentifier>{b6f5c986-23d2-4e73-994b-c61f2f09cd66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\CreatorGameObject">
+      <UniqueIdentifier>{96459b4a-a55c-4e15-bed2-ba30a3fbe2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\Timer">
+      <UniqueIdentifier>{b2ff6e62-e337-4c5f-91e1-8c0c039063b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\GameOver">
+      <UniqueIdentifier>{8875a78c-f0ac-4a21-bce7-25238a7319da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\GameWins">
+      <UniqueIdentifier>{f9ef0f1b-9e42-4f20-a110-9066ba0cca80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\BuildGameOver">
+      <UniqueIdentifier>{78b90694-3c8f-4647-b9d7-a8bbea83db17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\BuildGameWins">
+      <UniqueIdentifier>{21f860f5-0a94-4f0f-9521-7a052f3eb3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Builders\BuildEndGame">
+      <UniqueIdentifier>{2314ae72-d21c-44d1-88bf-ffc31fa40896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Widget">
+      <UniqueIdentifier>{352a9bf0-becc-49ab-932e-4bddb45e6f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Widget\Lives">
+      <UniqueIdentifier>{8b7ae1a2-898a-4ad4-a188-567410744021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Widget\Button">
+      <UniqueIdentifier>{258b311c-b71d-4123-97c8-16cedaa42e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Briks">
+      <UniqueIdentifier>{d7f5ea47-7aee-4a91-9f3a-141d3c1719ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Briks\Brick">
+      <UniqueIdentifier>{0327676c-f6dc-4522-8212-afc91f19c12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Briks\CLLDestroyBrick">
+      <UniqueIdentifier>{9f90be44-7c9c-466c-94f1-1ae3f4bbaf00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Briks\ScrollDown">
+      <UniqueIdentifier>{eb73e145-a890-403a-a01e-50fe964995f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\LevelContent">
+      <UniqueIdentifier>{cca77bd7-1648-453b-9df1-0c8f1c01404e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ParserLevel">
+      <UniqueIdentifier>{35034aa3-f5d1-46aa-b214-42e5f03086a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ParserLevel\TextFile">
+      <UniqueIdentifier>{95f87d53-d411-498b-9126-00cc3f7ae7f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ParserLevel\Factory">
+      <UniqueIdentifier>{07fe8152-0a2e-4a92-b477-696c1bf17150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus">
+      <UniqueIdentifier>{98885a46-64ae-495a-870c-0e43b026c1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\Bonus">
+      <UniqueIdentifier>{9ab35ea1-91ca-43c7-ac9f-ac07915dab89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusLives">
+      <UniqueIdentifier>{e48bf9e9-c250-4218-81dd-b99449edb349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\CLLBonusUse">
+      <UniqueIdentifier>{b2373739-552c-4594-81b4-423b1db7a6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusPaddleExpand">
+      <UniqueIdentifier>{af0f9083-176c-4ea8-8588-401f71479c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusPaddleSqueeze">
+      <UniqueIdentifier>{668c6da8-af73-4c82-8de5-f1c59dc63ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusLivesFull">
+      <UniqueIdentifier>{c796fd41-f0d0-4440-9cd4-14b0e49be7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusBall">
+      <UniqueIdentifier>{a7e9d475-c2e7-4949-bfe6-5d22c7d7f74d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusBallSpeed">
+      <UniqueIdentifier>{3dd29d5b-4fce-41ee-9691-4e818373c56f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Bonus\BonusWeapon">
+      <UniqueIdentifier>{8072839a-8840-4543-b3fe-4cb90542232e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Player\Weapon">
+      <UniqueIdentifier>{332189f8-8d2c-4f57-9a90-1fb73c49a9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\CLLBullet">
+      <UniqueIdentifier>{ee110d95-dee8-40b3-bcbc-3b7e64cfb2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\DrawNumber">
+      <UniqueIdentifier>{7bca73db-b935-4985-b745-ddbac929596f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\WaitToBall">
+      <UniqueIdentifier>{0447bf23-4966-41cd-9320-b6c372612e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\CLLCounter">
+      <UniqueIdentifier>{d8cde896-899b-4620-bc67-98c58eb9bce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Briks\DestroyBrick">
+      <UniqueIdentifier>{44b644af-e326-4f6d-997f-b627a1c83d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Graphics\Effects">
+      <UniqueIdentifier>{4e2bd15e-456e-45fa-99cb-71b5f33bc416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Systems\Effects">
+      <UniqueIdentifier>{e350c77d-5e6e-4c79-9b06-1fab49c52e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\CLLEffect">
+      <UniqueIdentifier>{418f330f-a6eb-4708-b37f-5c6c6cb24912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\Transition">
+      <UniqueIdentifier>{74d4e70f-20e8-4fce-a3b2-0d7f996730df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\Transition\TransitionHide">
+      <UniqueIdentifier>{664e0c9d-809b-414f-9e4f-24764e49625c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Gameplay\Transition\TransitionShow">
+      <UniqueIdentifier>{65142608-71ac-48db-882d-b5106bf6f0d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components\Options">
+      <UniqueIdentifier>{053706b4-1a94-4c21-a6ff-2e2099f821bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\ecs\aaActor.cpp">
+      <Filter>Source\ecs\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ecs\aaComponent.cpp">
+      <Filter>Source\ecs\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ecs\aaContainer.cpp">
+      <Filter>Source\ecs\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ecs\aaSystem.cpp">
+      <Filter>Source\ecs\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ecs\update\aaComponent_Update.cpp">
+      <Filter>Source\ecs\Systems\SystemUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ecs\update\aaSystem_Update.cpp">
+      <Filter>Source\ecs\Systems\SystemUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ArcanoidScena.cpp">
+      <Filter>Source\ArcanoidScena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Sprite.cpp">
+      <Filter>Source\Components\Graphics\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BuildLevel.cpp">
+      <Filter>Source\Builders\BuildLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_GeometryData.cpp">
+      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System_PhysicsBall.cpp">
+      <Filter>Source\PhysicsBall\SystemPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_ShapeCircle.cpp">
+      <Filter>Source\PhysicsBall\Component_Shape\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Body.cpp">
+      <Filter>Source\PhysicsBall\Component_Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_ShapePolygon.cpp">
+      <Filter>Source\PhysicsBall\Component_Shape\Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Manifold.cpp">
+      <Filter>Source\PhysicsBall\Manifold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System_RenderDraw.cpp">
+      <Filter>Source\Systems\RenderDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Collision.cpp">
+      <Filter>Source\PhysicsBall\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_CLLDestroyBrick.cpp">
+      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System_Input.cpp">
+      <Filter>Source\Systems\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_PlayerControls.cpp">
+      <Filter>Source\Components\Player\PlayerControls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System_RenderDebug.cpp">
+      <Filter>Source\Systems\RenderDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_PhysicsDebug.cpp">
+      <Filter>Source\PhysicsBall\Component_PhysicsDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Paddle.cpp">
+      <Filter>Source\Components\Player\Paddle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Ball.cpp">
+      <Filter>Source\Components\Balls\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Cling.cpp">
+      <Filter>Source\Components\Player\Cling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Lives.cpp">
+      <Filter>Source\Components\Widget\Lives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_DestroyOutArea.cpp">
+      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_LivesToBall.cpp">
+      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_CLLSpeedBall.cpp">
+      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Button.cpp">
+      <Filter>Source\Components\Widget\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BuildMenu.cpp">
+      <Filter>Source\Builders\BuildMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CreatorWidget.cpp">
+      <Filter>Source\Builders\CreatorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CreatorGameObject.cpp">
+      <Filter>Source\Builders\CreatorGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Timer.cpp">
+      <Filter>Source\Components\Gameplay\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_GameOver.cpp">
+      <Filter>Source\Components\Gameplay\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_GameWins.cpp">
+      <Filter>Source\Components\Gameplay\GameWins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BuildGameOver.cpp">
+      <Filter>Source\Builders\BuildGameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BuildGameWins.cpp">
+      <Filter>Source\Builders\BuildGameWins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Brick.cpp">
+      <Filter>Source\Components\Briks\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BuildEndGame.cpp">
+      <Filter>Source\Builders\BuildEndGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_ScrollDown.cpp">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_LevelContent.cpp">
+      <Filter>Source\Components\Gameplay\LevelContent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ParserLevel_TextFile.cpp">
+      <Filter>Source\ParserLevel\TextFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ParserFactory.cpp">
+      <Filter>Source\ParserLevel\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Bonus.cpp">
+      <Filter>Source\Components\Bonus\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusLives.cpp">
+      <Filter>Source\Components\Bonus\BonusLives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_CLLBonusUse.cpp">
+      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusPaddleExpand.cpp">
+      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusPaddleSqueeze.cpp">
+      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusLivesFull.cpp">
+      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusBall.cpp">
+      <Filter>Source\Components\Bonus\BonusBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusBallSpeed.cpp">
+      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_BonusWeapon.cpp">
+      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Weapon.cpp">
+      <Filter>Source\Components\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_CLLBullet.cpp">
+      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_DrawNumber.cpp">
+      <Filter>Source\Components\Graphics\DrawNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_WaitToBall.cpp">
+      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_DestroyBrick.cpp">
+      <Filter>Source\Components\Briks\DestroyBrick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Effects.cpp">
+      <Filter>Source\Components\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\System_Effects.cpp">
+      <Filter>Source\Systems\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_CLLEffect.cpp">
+      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Transition.cpp">
+      <Filter>Source\Components\Gameplay\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_TransitionHide.cpp">
+      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_TransitionShow.cpp">
+      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Component_Options.cpp">
+      <Filter>Source\Components\Options</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ecs\aaActor.h">
+      <Filter>Source\ecs\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\aaCaching.h">
+      <Filter>Source\ecs\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\aaComponent.h">
+      <Filter>Source\ecs\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\aaComponentHandler.h">
+      <Filter>Source\ecs\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\aaContainer.h">
+      <Filter>Source\ecs\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\aaSystem.h">
+      <Filter>Source\ecs\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\update\aaComponent_Update.h">
+      <Filter>Source\ecs\Systems\SystemUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\update\aaSystem_Update.h">
+      <Filter>Source\ecs\Systems\SystemUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ArcanoidScena.h">
+      <Filter>Source\ArcanoidScena</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Sprite.h">
+      <Filter>Source\Components\Graphics\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BuildLevel.h">
+      <Filter>Source\Builders\BuildLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Geometry.h">
+      <Filter>Source\Components\Graphics\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_GeometryData.h">
+      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\System_PhysicsBall.h">
+      <Filter>Source\PhysicsBall\SystemPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Shape.h">
+      <Filter>Source\PhysicsBall\Component_Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_ShapeCircle.h">
+      <Filter>Source\PhysicsBall\Component_Shape\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Body.h">
+      <Filter>Source\PhysicsBall\Component_Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MathUtils.h">
+      <Filter>Source\Utils\MathUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_ShapePolygon.h">
+      <Filter>Source\PhysicsBall\Component_Shape\Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Manifold.h">
+      <Filter>Source\PhysicsBall\Manifold</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Draw.h">
+      <Filter>Source\Components\Graphics\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\System_RenderDraw.h">
+      <Filter>Source\Systems\RenderDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Collision.h">
+      <Filter>Source\PhysicsBall\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ShapeType.h">
+      <Filter>Source\PhysicsBall\Component_Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Collision.h">
+      <Filter>Source\PhysicsBall\Component_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLDestroyBrick.h">
+      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\System_Input.h">
+      <Filter>Source\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_PlayerControls.h">
+      <Filter>Source\Components\Player\PlayerControls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Debug.h">
+      <Filter>Source\Components\Graphics\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\System_RenderDebug.h">
+      <Filter>Source\Systems\RenderDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_PhysicsDebug.h">
+      <Filter>Source\PhysicsBall\Component_PhysicsDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Paddle.h">
+      <Filter>Source\Components\Player\Paddle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Ball.h">
+      <Filter>Source\Components\Balls\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ecs\utils\aaUtils.h">
+      <Filter>Source\ecs\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Input.h">
+      <Filter>Source\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Cling.h">
+      <Filter>Source\Components\Player\Cling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Lives.h">
+      <Filter>Source\Components\Widget\Lives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_DestroyOutArea.h">
+      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_LivesToBall.h">
+      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLSpeedBall.h">
+      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Button.h">
+      <Filter>Source\Components\Widget\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BuildMenu.h">
+      <Filter>Source\Builders\BuildMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CreatorWidget.h">
+      <Filter>Source\Builders\CreatorWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CreatorGameObject.h">
+      <Filter>Source\Builders\CreatorGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Timer.h">
+      <Filter>Source\Components\Gameplay\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_GameOver.h">
+      <Filter>Source\Components\Gameplay\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_GameWins.h">
+      <Filter>Source\Components\Gameplay\GameWins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BuildGameOver.h">
+      <Filter>Source\Builders\BuildGameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BuildGameWins.h">
+      <Filter>Source\Builders\BuildGameWins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Brick.h">
+      <Filter>Source\Components\Briks\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BuildEndGame.h">
+      <Filter>Source\Builders\BuildEndGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_ScrollDown.h">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_ScrollCan.h">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_LevelContent.h">
+      <Filter>Source\Components\Gameplay\LevelContent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserLevel_TextFile.h">
+      <Filter>Source\ParserLevel\TextFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserFactory.h">
+      <Filter>Source\ParserLevel\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserLevel.h">
+      <Filter>Source\ParserLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Bonus.h">
+      <Filter>Source\Components\Bonus\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusLives.h">
+      <Filter>Source\Components\Bonus\BonusLives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLBonusUse.h">
+      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusPaddleExpand.h">
+      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusPaddleSqueeze.h">
+      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusLivesFull.h">
+      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusBall.h">
+      <Filter>Source\Components\Bonus\BonusBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusBallSpeed.h">
+      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_BonusWeapon.h">
+      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Weapon.h">
+      <Filter>Source\Components\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLBullet.h">
+      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_DrawNumber.h">
+      <Filter>Source\Components\Graphics\DrawNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_WaitToBall.h">
+      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLCounter.h">
+      <Filter>Source\Components\Gameplay\CLLCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_DestroyBrick.h">
+      <Filter>Source\Components\Briks\DestroyBrick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Effects.h">
+      <Filter>Source\Components\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\System_Effects.h">
+      <Filter>Source\Systems\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_CLLEffect.h">
+      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Transition.h">
+      <Filter>Source\Components\Gameplay\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_TransitionHide.h">
+      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_TransitionShow.h">
+      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Component_Options.h">
+      <Filter>Source\Components\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\base_Properties.h">
+      <Filter>Source\Utils\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Point.h">
+      <Filter>Source\Utils\Point</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Rect.h">
+      <Filter>Source\Utils\Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\base_Random.h">
+      <Filter>Source\Utils\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\base_String.h">
+      <Filter>Source\Utils\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Device.h">
+      <Filter>Source\!Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Render.h">
+      <Filter>Source\!Device\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BreakoutGame_VS.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
