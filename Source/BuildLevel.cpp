@@ -204,7 +204,7 @@ void ABuildLevel::makeGameplay()
 ///-------------------------------------------------------------------------
 void ABuildLevel::makeLevel(const std::string &fileName)
 {
-    //компанент который содержит весь уровень блоков, 
+    //компонент который содержит весь уровень блоков, 
     //во время игры, эти блоки спавнятся на игровой уровень
     const auto content = mContainer->findComponent<AComponentLevelContent>();
     if (!content) return;

@@ -63,7 +63,7 @@ namespace ecs
 
 
          ///-------------------------------------------------------------------------
-        /// поиск компанента в акторе
+        /// поиск компонента в акторе
         template< class T = AComponent>
         std::shared_ptr<T> findComponent() const noexcept
         {
@@ -92,7 +92,7 @@ namespace ecs
 
 
          ///-------------------------------------------------------------------------
-         /// поиск компанента в акторе
+         /// поиск компонента в акторе
         template< class T = AComponent>
         void findComponents(std::vector<std::shared_ptr<T>> &list) const noexcept
         {
@@ -121,7 +121,7 @@ namespace ecs
 
 
         ///-------------------------------------------------------------------------
-        /// поиск компанента в акторе
+        /// поиск компонента в акторе
         template< class T = AComponent>
         std::vector<std::shared_ptr<T>> findComponents() const noexcept
         {
@@ -134,7 +134,7 @@ namespace ecs
 
 
         ///-------------------------------------------------------------------------
-        /// создание и добавление компанента в актор
+        /// создание и добавление компонента в актор
         template< class T, typename... Args>
         std::shared_ptr<T> create(Args&&... args)
         {

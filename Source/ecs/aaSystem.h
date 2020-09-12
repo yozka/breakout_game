@@ -34,7 +34,7 @@ namespace ecs
         void unregisterContainer (); //снятие регистрации с контейнера
 
         void changeComponents(); //система поменяла свои действия
-        virtual void refreshComponents() {} ; //нужно изменить компаненты
+        virtual void refreshComponents() {} ; //нужно изменить компоненты
 
 
     protected:
@@ -53,7 +53,7 @@ namespace ecs
     ///
     ///
     ///
-    /// Система которая работает над компанентами
+    /// Система которая работает над компонентами
     ///
     ///
     ///-------------------------------------------------------------------------
@@ -76,7 +76,7 @@ namespace ecs
         ///-------------------------------------------------------------------------
     protected:
 
-        std::vector<std::shared_ptr<T>> components; //список компанентов
+        std::vector<std::shared_ptr<T>> components; //список компонентов
 
         void refreshComponents() override
         {

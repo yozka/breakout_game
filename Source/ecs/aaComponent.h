@@ -23,7 +23,7 @@ namespace ecs
 	///
 	///
 	///
-	/// Базовый Компанент элемента
+	/// Базовый Компонент элемента
 	///
 	///
 	///-------------------------------------------------------------------------
@@ -46,7 +46,7 @@ namespace ecs
         AContainer* getContainer() const noexcept; //возвратим текущий контейнер
 
 
-        virtual void changeComponents() {}; //компаненты поменялись, чтото добавилось, чтото удалилось
+        virtual void changeComponents() {}; //компоненты поменялись, что-то добавилось, что-то удалилось
 
         virtual void assignContainer() {}; //доавляем себя в контейнера
         virtual void rejectContainer() {}; //удаляем себя из контейнера
@@ -57,7 +57,7 @@ namespace ecs
 
 
         ///-------------------------------------------------------------------------
-        /// поиск компанента в акторе
+        /// поиск компонента в акторе
         template< class T = AComponent>
         std::shared_ptr<T> findComponent() const noexcept
         {
@@ -79,7 +79,7 @@ namespace ecs
 
 
         ///-------------------------------------------------------------------------
-        /// поиск компанента в акторе
+        /// поиск компонента в акторе
         template< class T = AComponent >
         void findComponents(std::vector<std::shared_ptr<T>> &list) const noexcept
         {
@@ -95,7 +95,7 @@ namespace ecs
 
 
         ///-------------------------------------------------------------------------
-        /// поиск компанента в акторе
+        /// поиск компонента в акторе
         template< class T = AComponent>
         std::vector<std::shared_ptr<T>> findComponents() const noexcept
         {

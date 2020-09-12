@@ -35,7 +35,7 @@ namespace game
         AComponentCLLEffect(const std::string &effectName);
         ~AComponentCLLEffect() override;
 
-        void changeComponents() override; //компаненты поменялись, чтото добавилось, чтото удалилось
+        void changeComponents() override; //компоненты поменялись, что-то добавилось, что-то удалилось
 
 
     public:

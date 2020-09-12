@@ -12,7 +12,7 @@ namespace ecs
     ///-------------------------------------------------------------------------
 
 
-    //шаблон поиска компаненты по тегу
+    //шаблон поиска компоненты по тегу
     template < class T >
     std::shared_ptr< T > findByTag(const AComponent *comp, const int tag)
     {
@@ -31,7 +31,7 @@ namespace ecs
 
 
 
-    //шаблон поиска компаненты по тегу
+    //шаблон поиска компоненты по тегу
     template < class T >
     void findsByTag(const AComponent *comp, const int tag, std::vector<std::shared_ptr< T >> &list)
     {
@@ -48,7 +48,7 @@ namespace ecs
     }
 
 
-    //шаблон поиска компаненты по тегу
+    //шаблон поиска компоненты по тегу
     template < class T >
     std::vector<std::shared_ptr< T >> findsByTag(const AComponent *comp, const int tag)
     {

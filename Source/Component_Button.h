@@ -47,7 +47,7 @@ namespace game
 
     public:
 
-        void changeComponents() override; //компаненты поменялись, чтото добавилось, чтото удалилось
+        void changeComponents() override; //компоненты поменялись, что-то добавилось, что-то удалилось
 
 
         bool mouseDown  (const dm::EventInput &input) override;

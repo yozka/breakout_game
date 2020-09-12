@@ -55,7 +55,7 @@ namespace game
             if (shapeA == eCount || shapeB == eCount)
             {
                 //проблема с типом фигур
-                //возможно чтотонехватает
+                //возможно что-тонехватает
                 return;
             }
 
