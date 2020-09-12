@@ -37,7 +37,7 @@ namespace game
         AComponentBody(const FPoint &position = FPoint(), const float angle = 0.0f);
 
 
-        void changeComponents() override; //компаненты поменялись, чтото добавилось, чтото удалилось
+        void changeComponents() override; //компоненты поменялись, что-то добавилось, что-то удалилось
 
     public:
 

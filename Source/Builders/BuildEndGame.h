@@ -52,7 +52,7 @@ namespace game
 
 
 
-        //удаление компанентов полностью
+        //удаление компонентов полностью
         template <class T>
         void remove()
         {

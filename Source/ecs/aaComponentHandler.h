@@ -71,7 +71,7 @@ namespace ecs
         template <typename TT>
         struct is_changeComponents <TT, decltype(sizeof(&TT::changeComponents))> : std::true_type { };
 
-        //компаненты помен¤лись, чтото добавилось, чтото удалилось
+        //компоненты поменялись, что-то добавилось, что-то удалилось
         void changeComponents() override
         {
             if constexpr (is_changeComponents<T>())

@@ -87,8 +87,8 @@ void AComponentLivesToBall::updateSlow(const float timeSpan)
     const auto cling = container->findComponent<AComponentCling>();
     if (!lives || !cling)
     {
-        //чтото нето, нету системыжизней 
-        //и нету штуки ккоторой приклеиваются мячи
+        //что-то нето, нет системы_жизней 
+        //и нету штуки к которой приклеиваются мячи
         return;
     }
     

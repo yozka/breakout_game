@@ -90,7 +90,7 @@ void AComponentWaitToBall::updateSlow(const float timeSpan)
     const auto cling    = container->findComponent<AComponentCling>();
     if (!paddle || !cling)
     {
-        //чтото нето, нету штуки ккоторой приклеиваются мячи
+        //что-то нето, нету штуки к которой приклеиваются мячи
         mTime = 0.0f;
         return;
     }

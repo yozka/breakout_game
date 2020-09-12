@@ -88,7 +88,7 @@ void AComponentGameOver::updateSlow(const float timeSpan)
     const auto lives = container->findComponent<AComponentLives>();
     if (!lives)
     {
-        //чтото нето, нету системыжизней 
+        //что-то нето, нет системы_жизней 
         return;
     }
 
