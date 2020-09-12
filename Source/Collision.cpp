@@ -81,7 +81,7 @@ void ACollision::CircleToPolygon(AManifold *m, const PComponentBody &a, const PC
 
     if (!circle || !polygon)
     {
-        //какието проблемы с компанентами
+        //какие-то проблемы с компонентами
         return;
     }
 

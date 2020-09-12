@@ -108,7 +108,7 @@ namespace ecs
 
 
              ///-------------------------------------------------------------------------
-            /// поиск компанента в кеше
+            /// поиск компонента в кеше
             static bool find(const ptr *entity, sptr &obj) noexcept
             {
                 auto &cache_one = get_cache_one();
@@ -125,7 +125,7 @@ namespace ecs
 
 
              ///-------------------------------------------------------------------------
-            /// поиск компанента в кеше
+            /// поиск компонента в кеше
             static bool findList(const ptr *entity, slist &list) noexcept
             {
                 auto &cache_list = get_cache_list();
