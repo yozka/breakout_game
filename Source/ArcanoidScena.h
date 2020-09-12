@@ -8,11 +8,12 @@
 #include "ecs/aaContainer.h"
 #include "ecs/update/aaSystem_Update.h"
 
-#include "System_RenderDraw.h"
-#include "System_PhysicsBall.h"
-#include "System_Input.h"
-#include "System_RenderDebug.h"
-#include "System_Effects.h"
+#include "Systems/System_RenderDraw.h"
+#include "Systems/System_Input.h"
+#include "Systems/System_RenderDebug.h"
+#include "Systems/System_Effects.h"
+#include "Physics/System_PhysicsBall.h"
+
 
 namespace game
 {

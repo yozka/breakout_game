@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <SFML/Graphics.hpp>
-#include "Point.h"
+#include "Utils/Point.h"
 
 namespace dm
 {

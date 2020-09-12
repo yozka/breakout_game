@@ -1,9 +1,8 @@
 // This is an independent project of an individual developer. Dear PVS-Studio, please check it.
 // PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
-#include "ArcanoidScena.h"
-#include "Builders/BuildLevel.h"
-#include "Builders/BuildMenu.h"
-
+#include "Component_ShapeCircle.h"
+#include "Component_Body.h"
+#include "Utils/MathUtils.h"
 
 
 
@@ -24,135 +23,11 @@ using namespace game;
 ///
 ///
 ///-------------------------------------------------------------------------
-AArcanoidScena::AArcanoidScena()
+AComponentShapeCircle::AComponentShapeCircle(const float radius)
     :
-        mSystemUpdate(settings::time_update)
+    mRadius(radius)
 {
 
-    //регистрация систем
-    mSystemUpdate.          registerContainer(&mContainer);
-    mSystemRenderDraw.      registerContainer(&mContainer);
-    mSystemRenderDebug.     registerContainer(&mContainer);
-    mSystemPhysicsBall.     registerContainer(&mContainer);
-    mSystemInput.           registerContainer(&mContainer);
-    mSystemEffects.         registerContainer(&mContainer);
-
-    beginGame();
-}
-///-------------------------------------------------------------------------
-
-
-
-
-
- ///------------------------------------------------------------------------
-///
-///
-///
-/// Destructor
-///
-///
-///-------------------------------------------------------------------------
-AArcanoidScena::~AArcanoidScena()
-{
-
-
-}
-///-------------------------------------------------------------------------
-
-
-
-
-
- ///------------------------------------------------------------------------
-///
-/// <summary>
-/// 
-/// </summary>
-///
-///-------------------------------------------------------------------------
-void AArcanoidScena::beginGame()
-{
-    /*ABuildLevel level(mContainer);
-    level.build();*/
-
-    ABuildMenu menu(&mContainer);
-    menu.build();
-}
-///-------------------------------------------------------------------------
-
-
-
-
-
-
-
- ///------------------------------------------------------------------------
-///
-/// <summary>
-/// Отрисовка
-/// </summary>
-///
-///-------------------------------------------------------------------------
-void AArcanoidScena :: draw(dm::ARender &render)
-{
-    mSystemRenderDraw.draw(render);
-    mSystemRenderDebug.draw(render);
-}
-///-------------------------------------------------------------------------
-
-
-
-
-
-
- ///------------------------------------------------------------------------
-///
-/// <summary>
-/// Обновление логики
-/// </summary>
-///
-///-------------------------------------------------------------------------
-void AArcanoidScena :: update(const float dt) 
-{
-    mSystemUpdate.      update(dt);
-    mSystemPhysicsBall. update(dt);
-    mSystemInput.       update(dt);
-    mSystemEffects.     update(dt);
-}
-///-------------------------------------------------------------------------
-
-
-
-
-
-
-
- ///------------------------------------------------------------------------
-///
-/// <summary>
-/// 
-/// </summary>
-///
-///-------------------------------------------------------------------------
-void AArcanoidScena :: input(const dm::EventInput &input)
-{
-    if (input.mouseMove)
-    {
-        mSystemInput.mouseMove(input);
-    }
-
-    const bool press = input.mouseLeft | input.mouseRigth;
-    if (press && !mMousePress)
-    {
-        mMousePress = true;
-        mSystemInput.mouseDown(input);
-    }
-    if (!press && mMousePress)
-    {
-        mMousePress = false;
-        mSystemInput.mouseUp(input);
-    }
 }
 ///-------------------------------------------------------------------------
 
@@ -166,20 +41,36 @@ void AArcanoidScena :: input(const dm::EventInput &input)
  ///------------------------------------------------------------------------
 ///
 /// <summary>
-/// нажали на кнопку клавы
+/// инциализация
 /// </summary>
 ///
 ///-------------------------------------------------------------------------
-void AArcanoidScena::keyPressed()
+void AComponentShapeCircle::initialize()
 {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::F1))
-    {
-        mSystemRenderDebug.enabled();
-    }
+    computeMass( 1.0f );
+}
+///-------------------------------------------------------------------------
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::F2))
+
+
+
+
+
+ ///------------------------------------------------------------------------
+///
+/// <summary>
+/// подсчитать массу объекта 
+/// </summary>
+///
+///-------------------------------------------------------------------------
+void AComponentShapeCircle::computeMass(const float density)
+{
+    const float mass = math::PI * mRadius * mRadius * density;
+    const float inertia = mass * mRadius * mRadius;
+
+    if (const auto body = findComponent<AComponentBody>())
     {
-        mSystemRenderDebug.disabled();
+        body->setMass(mass, inertia);
     }
 }
 ///-------------------------------------------------------------------------
@@ -187,3 +78,71 @@ void AArcanoidScena::keyPressed()
 
 
 
+
+ ///------------------------------------------------------------------------
+///
+/// <summary>
+/// ориентация объекта
+/// </summary>
+///
+///-------------------------------------------------------------------------
+void AComponentShapeCircle::setAngleRadian(const float radians)
+{
+
+}
+///-------------------------------------------------------------------------
+
+
+
+
+
+ ///------------------------------------------------------------------------
+///
+/// <summary>
+/// радиус круга
+/// </summary>
+///
+///-------------------------------------------------------------------------
+float AComponentShapeCircle::radius()const
+{
+    return mRadius;
+}
+///-------------------------------------------------------------------------
+
+
+
+
+ ///------------------------------------------------------------------------
+///
+/// <summary>
+/// ограничиваюшая рамка элемента
+/// </summary>
+///
+///-------------------------------------------------------------------------
+FPoint AComponentShapeCircle::boundingSize() const
+{
+    return { mRadius * 2.0f, mRadius * 2.0f };
+}
+///-------------------------------------------------------------------------
+
+
+
+
+
+
+
+ ///------------------------------------------------------------------------
+///
+/// <summary>
+/// Самая последния точка вдоль направления внутри многоугольника
+/// </summary>
+///
+///-------------------------------------------------------------------------
+FPoint AComponentShapeCircle::getSupport(const FPoint &dir) const
+{
+    auto d = dir;
+    d.normalize();
+    d = d * mRadius;
+    return d;
+}
+///-------------------------------------------------------------------------

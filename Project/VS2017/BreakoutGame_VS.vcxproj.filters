@@ -35,25 +35,232 @@
     <Filter Include="Source\!Device\Render">
       <UniqueIdentifier>{d964d5c8-a70c-4bc7-b6ce-3ad45ef3a842}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Physics">
+      <UniqueIdentifier>{bae1daf9-0512-4b23-bbca-4b5926a88036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_Shape">
+      <UniqueIdentifier>{d9ec2fda-da24-4064-b3f6-183b7949c923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_Shape\Circle">
+      <UniqueIdentifier>{4abf3c8a-f2db-48a5-a534-fdd54d26a722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_Shape\Polygon">
+      <UniqueIdentifier>{8b9664c2-c623-46d4-acdd-bb7c055c5f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_Body">
+      <UniqueIdentifier>{321be385-dbdf-4b05-ad1a-522103146aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\SystemPhysics">
+      <UniqueIdentifier>{06adb412-5b72-4892-b900-e6b36af96988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Manifold">
+      <UniqueIdentifier>{96b2a04b-1fb5-4d67-ac08-2656b28bd635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Collision">
+      <UniqueIdentifier>{1c8744db-6ee7-4489-a10e-00afce5234af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_Collision">
+      <UniqueIdentifier>{f06cb8a7-f0bd-435c-ab01-f4acd5c6985b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Component_PhysicsDebug">
+      <UniqueIdentifier>{1140cfca-50ad-4bb4-8dd8-be66cb7ae6d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\base_Properties.cpp">
-      <Filter>Source\Utils\Properties</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\base_Random.cpp">
-      <Filter>Source\Utils\Random</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\base_String.cpp">
-      <Filter>Source\Utils\String</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Device.cpp">
       <Filter>Source\!Device</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Render.cpp">
       <Filter>Source\!Device\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Utils\base_Properties.cpp">
+      <Filter>Source\Utils\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Utils\base_Random.cpp">
+      <Filter>Source\Utils\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Utils\base_String.cpp">
+      <Filter>Source\Utils\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\BuildEndGame.cpp">
+      <Filter>Source\Builders\BuildEndGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\BuildGameOver.cpp">
+      <Filter>Source\Builders\BuildGameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\BuildGameWins.cpp">
+      <Filter>Source\Builders\BuildGameWins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\BuildLevel.cpp">
+      <Filter>Source\Builders\BuildLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\BuildMenu.cpp">
+      <Filter>Source\Builders\BuildMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\CreatorGameObject.cpp">
+      <Filter>Source\Builders\CreatorGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Builders\CreatorWidget.cpp">
+      <Filter>Source\Builders\CreatorWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ParserLevel\ParserFactory.cpp">
+      <Filter>Source\ParserLevel\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ParserLevel\ParserLevel_TextFile.cpp">
+      <Filter>Source\ParserLevel\TextFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Collision.cpp">
+      <Filter>Source\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Component_Body.cpp">
+      <Filter>Source\Physics\Component_Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Component_PhysicsDebug.cpp">
+      <Filter>Source\Physics\Component_PhysicsDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Component_ShapeCircle.cpp">
+      <Filter>Source\Physics\Component_Shape\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Component_ShapePolygon.cpp">
+      <Filter>Source\Physics\Component_Shape\Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\Manifold.cpp">
+      <Filter>Source\Physics\Manifold</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Physics\System_PhysicsBall.cpp">
+      <Filter>Source\Physics\SystemPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Systems\System_Effects.cpp">
+      <Filter>Source\Systems\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Systems\System_Input.cpp">
+      <Filter>Source\Systems\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Systems\System_RenderDebug.cpp">
+      <Filter>Source\Systems\RenderDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Systems\System_RenderDraw.cpp">
+      <Filter>Source\Systems\RenderDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Balls\Component_Ball.cpp">
+      <Filter>Source\Components\Balls\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Balls\Component_CLLSpeedBall.cpp">
+      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_Bonus.cpp">
+      <Filter>Source\Components\Bonus\Bonus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusBall.cpp">
+      <Filter>Source\Components\Bonus\BonusBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusBallSpeed.cpp">
+      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusLives.cpp">
+      <Filter>Source\Components\Bonus\BonusLives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusLivesFull.cpp">
+      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusPaddleExpand.cpp">
+      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusPaddleSqueeze.cpp">
+      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_BonusWeapon.cpp">
+      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Bonus\Component_CLLBonusUse.cpp">
+      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Briks\Component_Brick.cpp">
+      <Filter>Source\Components\Briks\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Briks\Component_CLLDestroyBrick.cpp">
+      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Briks\Component_DestroyBrick.cpp">
+      <Filter>Source\Components\Briks\DestroyBrick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Briks\Component_ScrollDown.cpp">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_CLLBullet.cpp">
+      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_CLLEffect.cpp">
+      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_DestroyOutArea.cpp">
+      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_GameOver.cpp">
+      <Filter>Source\Components\Gameplay\GameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_GameWins.cpp">
+      <Filter>Source\Components\Gameplay\GameWins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_LevelContent.cpp">
+      <Filter>Source\Components\Gameplay\LevelContent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_LivesToBall.cpp">
+      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_Timer.cpp">
+      <Filter>Source\Components\Gameplay\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_Transition.cpp">
+      <Filter>Source\Components\Gameplay\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_TransitionHide.cpp">
+      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_TransitionShow.cpp">
+      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Gameplay\Component_WaitToBall.cpp">
+      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Graphics\Component_DrawNumber.cpp">
+      <Filter>Source\Components\Graphics\DrawNumber</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Graphics\Component_Effects.cpp">
+      <Filter>Source\Components\Graphics\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Graphics\Component_GeometryData.cpp">
+      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Graphics\Component_Sprite.cpp">
+      <Filter>Source\Components\Graphics\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Options\Component_Options.cpp">
+      <Filter>Source\Components\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Player\Component_Cling.cpp">
+      <Filter>Source\Components\Player\Cling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Player\Component_Paddle.cpp">
+      <Filter>Source\Components\Player\Paddle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Player\Component_PlayerControls.cpp">
+      <Filter>Source\Components\Player\PlayerControls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Player\Component_Weapon.cpp">
+      <Filter>Source\Components\Player\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Widget\Component_Button.cpp">
+      <Filter>Source\Components\Widget\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Components\Widget\Component_Lives.cpp">
+      <Filter>Source\Components\Widget\Lives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MainGame.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -90,35 +297,8 @@
     <Filter Include="Source\Systems">
       <UniqueIdentifier>{80b1ff9a-cbf9-481b-854d-798c9b43d7bc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\PhysicsBall">
-      <UniqueIdentifier>{bae1daf9-0512-4b23-bbca-4b5926a88036}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_Shape">
-      <UniqueIdentifier>{d9ec2fda-da24-4064-b3f6-183b7949c923}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_Shape\Circle">
-      <UniqueIdentifier>{4abf3c8a-f2db-48a5-a534-fdd54d26a722}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_Shape\Polygon">
-      <UniqueIdentifier>{8b9664c2-c623-46d4-acdd-bb7c055c5f25}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_Body">
-      <UniqueIdentifier>{321be385-dbdf-4b05-ad1a-522103146aaf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\SystemPhysics">
-      <UniqueIdentifier>{06adb412-5b72-4892-b900-e6b36af96988}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Manifold">
-      <UniqueIdentifier>{96b2a04b-1fb5-4d67-ac08-2656b28bd635}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Systems\RenderDraw">
       <UniqueIdentifier>{8fd91441-b951-44ec-a878-9bd88531dd3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Collision">
-      <UniqueIdentifier>{1c8744db-6ee7-4489-a10e-00afce5234af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_Collision">
-      <UniqueIdentifier>{f06cb8a7-f0bd-435c-ab01-f4acd5c6985b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Components\Gameplay">
       <UniqueIdentifier>{c7865e50-3c62-4092-a3ee-d42f39c55ce1}</UniqueIdentifier>
@@ -143,9 +323,6 @@
     </Filter>
     <Filter Include="Source\Systems\RenderDebug">
       <UniqueIdentifier>{4e267796-d769-47fd-ae4c-c825aab1715f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\PhysicsBall\Component_PhysicsDebug">
-      <UniqueIdentifier>{1140cfca-50ad-4bb4-8dd8-be66cb7ae6d5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\ecs\Utils">
       <UniqueIdentifier>{db822a93-5efb-430f-a87a-1f93c02bfb4e}</UniqueIdentifier>
@@ -329,180 +506,6 @@
     <ClCompile Include="..\..\Source\ArcanoidScena.cpp">
       <Filter>Source\ArcanoidScena</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Sprite.cpp">
-      <Filter>Source\Components\Graphics\Sprite</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BuildLevel.cpp">
-      <Filter>Source\Builders\BuildLevel</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_GeometryData.cpp">
-      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\System_PhysicsBall.cpp">
-      <Filter>Source\PhysicsBall\SystemPhysics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_ShapeCircle.cpp">
-      <Filter>Source\PhysicsBall\Component_Shape\Circle</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Body.cpp">
-      <Filter>Source\PhysicsBall\Component_Body</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_ShapePolygon.cpp">
-      <Filter>Source\PhysicsBall\Component_Shape\Polygon</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Manifold.cpp">
-      <Filter>Source\PhysicsBall\Manifold</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\System_RenderDraw.cpp">
-      <Filter>Source\Systems\RenderDraw</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Collision.cpp">
-      <Filter>Source\PhysicsBall\Collision</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_CLLDestroyBrick.cpp">
-      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\System_Input.cpp">
-      <Filter>Source\Systems\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_PlayerControls.cpp">
-      <Filter>Source\Components\Player\PlayerControls</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\System_RenderDebug.cpp">
-      <Filter>Source\Systems\RenderDebug</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_PhysicsDebug.cpp">
-      <Filter>Source\PhysicsBall\Component_PhysicsDebug</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Paddle.cpp">
-      <Filter>Source\Components\Player\Paddle</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Ball.cpp">
-      <Filter>Source\Components\Balls\Ball</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Cling.cpp">
-      <Filter>Source\Components\Player\Cling</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Lives.cpp">
-      <Filter>Source\Components\Widget\Lives</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_DestroyOutArea.cpp">
-      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_LivesToBall.cpp">
-      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_CLLSpeedBall.cpp">
-      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Button.cpp">
-      <Filter>Source\Components\Widget\Button</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BuildMenu.cpp">
-      <Filter>Source\Builders\BuildMenu</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CreatorWidget.cpp">
-      <Filter>Source\Builders\CreatorWidget</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CreatorGameObject.cpp">
-      <Filter>Source\Builders\CreatorGameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Timer.cpp">
-      <Filter>Source\Components\Gameplay\Timer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_GameOver.cpp">
-      <Filter>Source\Components\Gameplay\GameOver</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_GameWins.cpp">
-      <Filter>Source\Components\Gameplay\GameWins</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BuildGameOver.cpp">
-      <Filter>Source\Builders\BuildGameOver</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BuildGameWins.cpp">
-      <Filter>Source\Builders\BuildGameWins</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Brick.cpp">
-      <Filter>Source\Components\Briks\Brick</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BuildEndGame.cpp">
-      <Filter>Source\Builders\BuildEndGame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_ScrollDown.cpp">
-      <Filter>Source\Components\Briks\ScrollDown</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_LevelContent.cpp">
-      <Filter>Source\Components\Gameplay\LevelContent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ParserLevel_TextFile.cpp">
-      <Filter>Source\ParserLevel\TextFile</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\ParserFactory.cpp">
-      <Filter>Source\ParserLevel\Factory</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Bonus.cpp">
-      <Filter>Source\Components\Bonus\Bonus</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusLives.cpp">
-      <Filter>Source\Components\Bonus\BonusLives</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_CLLBonusUse.cpp">
-      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusPaddleExpand.cpp">
-      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusPaddleSqueeze.cpp">
-      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusLivesFull.cpp">
-      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusBall.cpp">
-      <Filter>Source\Components\Bonus\BonusBall</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusBallSpeed.cpp">
-      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_BonusWeapon.cpp">
-      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Weapon.cpp">
-      <Filter>Source\Components\Player\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_CLLBullet.cpp">
-      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_DrawNumber.cpp">
-      <Filter>Source\Components\Graphics\DrawNumber</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_WaitToBall.cpp">
-      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_DestroyBrick.cpp">
-      <Filter>Source\Components\Briks\DestroyBrick</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Effects.cpp">
-      <Filter>Source\Components\Graphics\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\System_Effects.cpp">
-      <Filter>Source\Systems\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_CLLEffect.cpp">
-      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Transition.cpp">
-      <Filter>Source\Components\Gameplay\Transition</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_TransitionHide.cpp">
-      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_TransitionShow.cpp">
-      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Component_Options.cpp">
-      <Filter>Source\Components\Options</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\ecs\aaActor.h">
@@ -532,230 +535,8 @@
     <ClInclude Include="..\..\Source\ArcanoidScena.h">
       <Filter>Source\ArcanoidScena</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Sprite.h">
-      <Filter>Source\Components\Graphics\Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BuildLevel.h">
-      <Filter>Source\Builders\BuildLevel</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Geometry.h">
-      <Filter>Source\Components\Graphics\Geometry</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_GeometryData.h">
-      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\System_PhysicsBall.h">
-      <Filter>Source\PhysicsBall\SystemPhysics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Shape.h">
-      <Filter>Source\PhysicsBall\Component_Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_ShapeCircle.h">
-      <Filter>Source\PhysicsBall\Component_Shape\Circle</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Body.h">
-      <Filter>Source\PhysicsBall\Component_Body</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\MathUtils.h">
-      <Filter>Source\Utils\MathUtils</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_ShapePolygon.h">
-      <Filter>Source\PhysicsBall\Component_Shape\Polygon</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Manifold.h">
-      <Filter>Source\PhysicsBall\Manifold</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Draw.h">
-      <Filter>Source\Components\Graphics\Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\System_RenderDraw.h">
-      <Filter>Source\Systems\RenderDraw</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Collision.h">
-      <Filter>Source\PhysicsBall\Collision</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ShapeType.h">
-      <Filter>Source\PhysicsBall\Component_Shape</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Collision.h">
-      <Filter>Source\PhysicsBall\Component_Collision</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLDestroyBrick.h">
-      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\System_Input.h">
-      <Filter>Source\Systems\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_PlayerControls.h">
-      <Filter>Source\Components\Player\PlayerControls</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Debug.h">
-      <Filter>Source\Components\Graphics\Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\System_RenderDebug.h">
-      <Filter>Source\Systems\RenderDebug</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_PhysicsDebug.h">
-      <Filter>Source\PhysicsBall\Component_PhysicsDebug</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Paddle.h">
-      <Filter>Source\Components\Player\Paddle</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Ball.h">
-      <Filter>Source\Components\Balls\Ball</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\ecs\utils\aaUtils.h">
       <Filter>Source\ecs\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Input.h">
-      <Filter>Source\Systems\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Cling.h">
-      <Filter>Source\Components\Player\Cling</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Lives.h">
-      <Filter>Source\Components\Widget\Lives</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_DestroyOutArea.h">
-      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_LivesToBall.h">
-      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLSpeedBall.h">
-      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Button.h">
-      <Filter>Source\Components\Widget\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BuildMenu.h">
-      <Filter>Source\Builders\BuildMenu</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CreatorWidget.h">
-      <Filter>Source\Builders\CreatorWidget</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CreatorGameObject.h">
-      <Filter>Source\Builders\CreatorGameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Timer.h">
-      <Filter>Source\Components\Gameplay\Timer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_GameOver.h">
-      <Filter>Source\Components\Gameplay\GameOver</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_GameWins.h">
-      <Filter>Source\Components\Gameplay\GameWins</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BuildGameOver.h">
-      <Filter>Source\Builders\BuildGameOver</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BuildGameWins.h">
-      <Filter>Source\Builders\BuildGameWins</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Brick.h">
-      <Filter>Source\Components\Briks\Brick</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\BuildEndGame.h">
-      <Filter>Source\Builders\BuildEndGame</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_ScrollDown.h">
-      <Filter>Source\Components\Briks\ScrollDown</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_ScrollCan.h">
-      <Filter>Source\Components\Briks\ScrollDown</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_LevelContent.h">
-      <Filter>Source\Components\Gameplay\LevelContent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ParserLevel_TextFile.h">
-      <Filter>Source\ParserLevel\TextFile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ParserFactory.h">
-      <Filter>Source\ParserLevel\Factory</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\ParserLevel.h">
-      <Filter>Source\ParserLevel</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Bonus.h">
-      <Filter>Source\Components\Bonus\Bonus</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusLives.h">
-      <Filter>Source\Components\Bonus\BonusLives</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLBonusUse.h">
-      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusPaddleExpand.h">
-      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusPaddleSqueeze.h">
-      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusLivesFull.h">
-      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusBall.h">
-      <Filter>Source\Components\Bonus\BonusBall</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusBallSpeed.h">
-      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_BonusWeapon.h">
-      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Weapon.h">
-      <Filter>Source\Components\Player\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLBullet.h">
-      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_DrawNumber.h">
-      <Filter>Source\Components\Graphics\DrawNumber</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_WaitToBall.h">
-      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLCounter.h">
-      <Filter>Source\Components\Gameplay\CLLCounter</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_DestroyBrick.h">
-      <Filter>Source\Components\Briks\DestroyBrick</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Effects.h">
-      <Filter>Source\Components\Graphics\Effects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\System_Effects.h">
-      <Filter>Source\Systems\Effects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_CLLEffect.h">
-      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Transition.h">
-      <Filter>Source\Components\Gameplay\Transition</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_TransitionHide.h">
-      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_TransitionShow.h">
-      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Component_Options.h">
-      <Filter>Source\Components\Options</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\base_Properties.h">
-      <Filter>Source\Utils\Properties</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Point.h">
-      <Filter>Source\Utils\Point</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Rect.h">
-      <Filter>Source\Utils\Rect</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\base_Random.h">
-      <Filter>Source\Utils\Random</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\base_String.h">
-      <Filter>Source\Utils\String</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Device.h">
       <Filter>Source\!Device</Filter>
@@ -764,6 +545,231 @@
       <Filter>Source\!Device\Render</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\Source\Utils\MathUtils.h">
+      <Filter>Source\Utils\MathUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils\Point.h">
+      <Filter>Source\Utils\Point</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils\base_Properties.h">
+      <Filter>Source\Utils\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils\base_Random.h">
+      <Filter>Source\Utils\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils\Rect.h">
+      <Filter>Source\Utils\Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils\base_String.h">
+      <Filter>Source\Utils\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\BuildEndGame.h">
+      <Filter>Source\Builders\BuildEndGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\BuildGameOver.h">
+      <Filter>Source\Builders\BuildGameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\BuildGameWins.h">
+      <Filter>Source\Builders\BuildGameWins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\BuildLevel.h">
+      <Filter>Source\Builders\BuildLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\BuildMenu.h">
+      <Filter>Source\Builders\BuildMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\CreatorGameObject.h">
+      <Filter>Source\Builders\CreatorGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Builders\CreatorWidget.h">
+      <Filter>Source\Builders\CreatorWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserLevel\ParserLevel.h">
+      <Filter>Source\ParserLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserLevel\ParserFactory.h">
+      <Filter>Source\ParserLevel\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ParserLevel\ParserLevel_TextFile.h">
+      <Filter>Source\ParserLevel\TextFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Collision.h">
+      <Filter>Source\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_Body.h">
+      <Filter>Source\Physics\Component_Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_Collision.h">
+      <Filter>Source\Physics\Component_Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_PhysicsDebug.h">
+      <Filter>Source\Physics\Component_PhysicsDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_Shape.h">
+      <Filter>Source\Physics\Component_Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\ShapeType.h">
+      <Filter>Source\Physics\Component_Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_ShapeCircle.h">
+      <Filter>Source\Physics\Component_Shape\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Component_ShapePolygon.h">
+      <Filter>Source\Physics\Component_Shape\Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\Manifold.h">
+      <Filter>Source\Physics\Manifold</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Physics\System_PhysicsBall.h">
+      <Filter>Source\Physics\SystemPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Systems\System_Effects.h">
+      <Filter>Source\Systems\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Systems\Component_Input.h">
+      <Filter>Source\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Systems\System_Input.h">
+      <Filter>Source\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Systems\System_RenderDebug.h">
+      <Filter>Source\Systems\RenderDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Systems\System_RenderDraw.h">
+      <Filter>Source\Systems\RenderDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Balls\Component_Ball.h">
+      <Filter>Source\Components\Balls\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Balls\Component_CLLSpeedBall.h">
+      <Filter>Source\Components\Balls\CLLSpeedBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_Bonus.h">
+      <Filter>Source\Components\Bonus\Bonus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusBall.h">
+      <Filter>Source\Components\Bonus\BonusBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusBallSpeed.h">
+      <Filter>Source\Components\Bonus\BonusBallSpeed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusLives.h">
+      <Filter>Source\Components\Bonus\BonusLives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusLivesFull.h">
+      <Filter>Source\Components\Bonus\BonusLivesFull</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusPaddleExpand.h">
+      <Filter>Source\Components\Bonus\BonusPaddleExpand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusPaddleSqueeze.h">
+      <Filter>Source\Components\Bonus\BonusPaddleSqueeze</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_BonusWeapon.h">
+      <Filter>Source\Components\Bonus\BonusWeapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Bonus\Component_CLLBonusUse.h">
+      <Filter>Source\Components\Bonus\CLLBonusUse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Briks\Component_Brick.h">
+      <Filter>Source\Components\Briks\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Briks\Component_CLLDestroyBrick.h">
+      <Filter>Source\Components\Briks\CLLDestroyBrick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Briks\Component_DestroyBrick.h">
+      <Filter>Source\Components\Briks\DestroyBrick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Briks\Component_ScrollCan.h">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Briks\Component_ScrollDown.h">
+      <Filter>Source\Components\Briks\ScrollDown</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_CLLBullet.h">
+      <Filter>Source\Components\Gameplay\CLLBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_CLLCounter.h">
+      <Filter>Source\Components\Gameplay\CLLCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_CLLEffect.h">
+      <Filter>Source\Components\Gameplay\CLLEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_DestroyOutArea.h">
+      <Filter>Source\Components\Gameplay\DestroyOutArea</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_GameOver.h">
+      <Filter>Source\Components\Gameplay\GameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_GameWins.h">
+      <Filter>Source\Components\Gameplay\GameWins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_LevelContent.h">
+      <Filter>Source\Components\Gameplay\LevelContent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_LivesToBall.h">
+      <Filter>Source\Components\Gameplay\LivesToBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_Timer.h">
+      <Filter>Source\Components\Gameplay\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_Transition.h">
+      <Filter>Source\Components\Gameplay\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_TransitionHide.h">
+      <Filter>Source\Components\Gameplay\Transition\TransitionHide</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_TransitionShow.h">
+      <Filter>Source\Components\Gameplay\Transition\TransitionShow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Gameplay\Component_WaitToBall.h">
+      <Filter>Source\Components\Gameplay\WaitToBall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_Debug.h">
+      <Filter>Source\Components\Graphics\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_Draw.h">
+      <Filter>Source\Components\Graphics\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_DrawNumber.h">
+      <Filter>Source\Components\Graphics\DrawNumber</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_Effects.h">
+      <Filter>Source\Components\Graphics\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_Geometry.h">
+      <Filter>Source\Components\Graphics\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_GeometryData.h">
+      <Filter>Source\Components\Graphics\Geometry\GeometryData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Graphics\Component_Sprite.h">
+      <Filter>Source\Components\Graphics\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Options\Component_Options.h">
+      <Filter>Source\Components\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Player\Component_Cling.h">
+      <Filter>Source\Components\Player\Cling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Player\Component_Paddle.h">
+      <Filter>Source\Components\Player\Paddle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Player\Component_PlayerControls.h">
+      <Filter>Source\Components\Player\PlayerControls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Player\Component_Weapon.h">
+      <Filter>Source\Components\Player\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Widget\Component_Button.h">
+      <Filter>Source\Components\Widget\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Components\Widget\Component_Lives.h">
+      <Filter>Source\Components\Widget\Lives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MainGame.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BreakoutGame_VS.rc">

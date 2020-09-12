@@ -2,7 +2,7 @@
 #include <memory>
 #include <list>
 #include <SFML/Graphics.hpp>
-#include "Point.h"
+#include "Utils/Point.h"
 
 namespace dm
 {
