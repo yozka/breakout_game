@@ -31,8 +31,7 @@ sf::Texture& loadImage(const std::string &name)
         throw "Не загружен файл";
     }
     img.setSmooth(true);
-    textures.emplace(name, std::move(img));
-    return textures[name];
+    return textures.emplace(name, std::move(img)).first->second;
 }
 
 
