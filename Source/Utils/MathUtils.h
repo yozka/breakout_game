@@ -26,7 +26,8 @@ namespace math
 
     /// Возвращает left, если value < left, right, если value > right, иначе value.
     /// Использовать можно только арифметические типы.
-    template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value>::type>
+	//bicycle
+    template <typename T, typename =std::enable_if_t<std::is_arithmetic_v<T>>>
     constexpr T clamp(T left, T right, T value)
     {
         return (value < left) ? left : (value > right) ? right : value;
@@ -50,43 +51,43 @@ namespace math
     }
 
 
-    inline FPoint cross(const FPoint &v, float a)
+	constexpr FPoint cross(const FPoint &v, float a)
     {
         return { a * v.y, -a * v.x };
     }
 
-    inline FPoint cross(float a, const FPoint &v)
+	constexpr FPoint cross(float a, const FPoint &v)
     {
         return { -a * v.y, a * v.x };
     }
 
-    inline float cross(const FPoint &a, const FPoint &b)
+	constexpr float cross(const FPoint &a, const FPoint &b)
     {
         return a.x * b.y - a.y * b.x;
     }
 
-    inline float dot(const FPoint& a, const FPoint& b)
+	constexpr float dot(const FPoint& a, const FPoint& b) noexcept
     {
         return a.x * b.x + a.y * b.y;
     }
 
-    inline float distSqr(const FPoint& a, const FPoint& b)
+	constexpr float distSqr(const FPoint& a, const FPoint& b)
     {
         const auto c = a - b;
         return dot(c, c);
     }
 
 
-    inline float lengthSqr(const FPoint& v)
+	constexpr float lengthSqr(const FPoint& v)
     {
         return v.x * v.x + v.y * v.y;
     }
 
 
-    inline bool biasGreaterThan(const float a, const float b)
+	constexpr bool biasGreaterThan(const float a, const float b)
     {
-        const float k_biasRelative = 0.95f;
-        const float k_biasAbsolute = 0.01f;
+        constexpr float k_biasRelative = 0.95f;
+		constexpr float k_biasAbsolute = 0.01f;
         return a >= b * k_biasRelative + a * k_biasAbsolute;
     }
 
@@ -107,20 +108,20 @@ namespace math
         };
 
 
-        matrix2()
+		constexpr matrix2()
             :
             m00(0.0f), m01(0.0f),
             m10(0.0f), m11(0.0f)
         {
         }
         
-        matrix2(const float radians)
+		matrix2(const float radians)
         {
             setAngle(radians);
         }
 
 
-        matrix2(const float a, const float b, const float c, const float d)
+		constexpr matrix2(const float a, const float b, const float c, const float d)
             :
                 m00(a), m01(b),
                 m10(c), m11(d)
@@ -130,7 +131,7 @@ namespace math
 
 
         
-        void setAngle(const float radians)
+		void setAngle(const float radians)
         {
             float c = std::cos(radians);
             float s = std::sin(radians);
@@ -140,14 +141,14 @@ namespace math
         }
 
 
-        matrix2 transpose() const
+		constexpr matrix2 transpose() const
         {
             return matrix2( m00, m10, m01, m11);
         }
 
-        const FPoint operator * (const FPoint &rhs) const
+        constexpr FPoint operator * (const FPoint &rhs) const
         {
-            return FPoint( m00 * rhs.x + m01 * rhs.y, m10 * rhs.x + m11 * rhs.y);
+			return { m00 * rhs.x + m01 * rhs.y, m10 * rhs.x + m11 * rhs.y };
         }
 
     };//matrix2

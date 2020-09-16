@@ -42,7 +42,12 @@ namespace game
     public:
 
         AArcanoidScena();
-        virtual ~AArcanoidScena();
+        virtual ~AArcanoidScena()=default;
+
+		AArcanoidScena(const AArcanoidScena&)=delete;
+		AArcanoidScena(const AArcanoidScena&&) = delete;
+		AArcanoidScena& operator=(const AArcanoidScena&) = delete;
+		AArcanoidScena& operator=(const AArcanoidScena&&) = delete;
 
     public:
 

@@ -31,7 +31,7 @@ namespace game
     public:
 
         AManifold(const PComponentBody &bodyA, const PComponentBody &bodyB);
-        virtual ~AManifold();
+        virtual ~AManifold()=default;
 
     public:
 

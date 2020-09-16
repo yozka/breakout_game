@@ -7,19 +7,17 @@ struct Point
 {
 
     ////////////////////////////////////////////////////////////
-    T x = { 0 };
-    T y = { 0 };
+    T x {};
+    T y {};
 
 
 
     ////////////////////////////////////////////////////////////
-    Point()
-    {
-    }
-
+	constexpr Point() = default;
+		
 
     ////////////////////////////////////////////////////////////
-    Point(const T& value)
+	constexpr Point(const T& value)
         :
         x(value),
         y(value)
@@ -29,7 +27,7 @@ struct Point
 
     ////////////////////////////////////////////////////////////
     template <typename TT>
-    Point(const TT& X, const TT& Y)
+	constexpr Point(const TT& X, const TT& Y)
         :
         x(static_cast<T>(X)),
         y(static_cast<T>(Y))
@@ -39,7 +37,7 @@ struct Point
 
 
     ////////////////////////////////////////////////////////////
-    Point(const T& X, const T& Y)
+	constexpr Point(const T& X, const T& Y)
         :
         x(X),
         y(Y)
@@ -85,7 +83,7 @@ struct Point
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator -(const Point<T>& right)
+constexpr Point<T> operator -(const Point<T>& right)
 {
     return Point<T>(-right.x, -right.y);
 }
@@ -93,7 +91,7 @@ inline Point<T> operator -(const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T>& operator +=(Point<T>& left, const Point<T>& right)
+constexpr Point<T>& operator +=(Point<T>& left, const Point<T>& right)
 {
     left.x += right.x;
     left.y += right.y;
@@ -104,7 +102,7 @@ inline Point<T>& operator +=(Point<T>& left, const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T>& operator -=(Point<T>& left, const Point<T>& right)
+constexpr Point<T>& operator -=(Point<T>& left, const Point<T>& right)
 {
     left.x -= right.x;
     left.y -= right.y;
@@ -115,7 +113,7 @@ inline Point<T>& operator -=(Point<T>& left, const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator +(const Point<T>& left, const Point<T>& right)
+constexpr Point<T> operator +(const Point<T>& left, const Point<T>& right)
 {
     return Point<T>(left.x + right.x, left.y + right.y);
 }
@@ -123,7 +121,7 @@ inline Point<T> operator +(const Point<T>& left, const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator -(const Point<T>& left, const Point<T>& right)
+constexpr Point<T> operator -(const Point<T>& left, const Point<T>& right)
 {
     return Point<T>(left.x - right.x, left.y - right.y);
 }
@@ -131,7 +129,7 @@ inline Point<T> operator -(const Point<T>& left, const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(const Point<T>& left, T right)
+constexpr Point<T> operator *(const Point<T>& left, T right)
 {
     return Point<T>(left.x * right, left.y * right);
 }
@@ -139,7 +137,7 @@ inline Point<T> operator *(const Point<T>& left, T right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(T left, const Point<T>& right)
+constexpr Point<T> operator *(T left, const Point<T>& right)
 {
     return Point<T>(right.x * left, right.y * left);
 }
@@ -148,7 +146,7 @@ inline Point<T> operator *(T left, const Point<T>& right)
 //1
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(const Point<T>& left, Point<T>& right)
+constexpr Point<T> operator *(const Point<T>& left, Point<T>& right)
 {
     return Point<T>(left.x * right.x, left.y * right.y);
 }
@@ -156,21 +154,21 @@ inline Point<T> operator *(const Point<T>& left, Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(Point<T>& left, const Point<T>& right)
+constexpr Point<T> operator *(Point<T>& left, const Point<T>& right)
 {
     return Point<T>(right.x * left.x, right.y * left.y);
 }
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(const Point<T>& left, const Point<T>& right)
+constexpr Point<T> operator *(const Point<T>& left, const Point<T>& right)
 {
     return Point<T>(right.x * left.x, right.y * left.y);
 }
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator *(Point<T>& left, Point<T>& right)
+constexpr Point<T> operator *(Point<T>& left, Point<T>& right)
 {
     return Point<T>(right.x * left.x, right.y * left.y);
 }
@@ -179,7 +177,7 @@ inline Point<T> operator *(Point<T>& left, Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T>& operator *=(Point<T>& left, T right)
+constexpr Point<T>& operator *=(Point<T>& left, T right)
 {
     left.x *= right;
     left.y *= right;
@@ -190,7 +188,7 @@ inline Point<T>& operator *=(Point<T>& left, T right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T> operator /(const Point<T>& left, T right)
+constexpr Point<T> operator /(const Point<T>& left, T right)
 {
     return Point<T>(left.x / right, left.y / right);
 }
@@ -198,7 +196,7 @@ inline Point<T> operator /(const Point<T>& left, T right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline Point<T>& operator /=(Point<T>& left, T right)
+constexpr Point<T>& operator /=(Point<T>& left, T right)
 {
     left.x /= right;
     left.y /= right;
@@ -209,7 +207,7 @@ inline Point<T>& operator /=(Point<T>& left, T right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline bool operator ==(const Point<T>& left, const Point<T>& right)
+constexpr bool operator ==(const Point<T>& left, const Point<T>& right)
 {
     return (left.x == right.x) && (left.y == right.y);
 }
@@ -217,7 +215,7 @@ inline bool operator ==(const Point<T>& left, const Point<T>& right)
 
 ////////////////////////////////////////////////////////////
 template <typename T>
-inline bool operator !=(const Point<T>& left, const Point<T>& right)
+constexpr bool operator !=(const Point<T>& left, const Point<T>& right)
 {
     return (left.x != right.x) || (left.y != right.y);
 }
