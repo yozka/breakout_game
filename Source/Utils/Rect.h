@@ -12,7 +12,7 @@ struct Rect
     T yStart    = { 0 };
     T yEnd      = { 0 };
 
-
+	constexpr Rect() = default;
     // Покомпонентный конструктор
     constexpr Rect(const T xStartValue, const T xEndValue, const T yStartValue, const T yEndValue)
         : 

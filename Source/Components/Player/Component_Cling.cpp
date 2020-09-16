@@ -92,7 +92,7 @@ void AComponentCling::clingBall(const ecs::PActor &actor)
     mBall = actor;
     mActive = true;
 
-    if (const auto body = mBall->findComponent<AComponentBody>())
+    if (const auto body = mBall->findComponent<AComponentBody>(); body)
     {
         body->setBallSpeed(0);
     }
@@ -143,7 +143,7 @@ FPoint AComponentCling::position()
 ///-------------------------------------------------------------------------
 void AComponentCling::moveBall()
 {
-    if (const auto body = mBall->findComponent<AComponentBody>())
+    if (const auto body = mBall->findComponent<AComponentBody>(); body)
     {
         body->setPosition(position());
     }
@@ -176,7 +176,7 @@ bool AComponentCling::runBall()
 
     //
     FPoint force(0.0f, ball->powerImpulse());
-    if (const auto geometry = findComponent<AComponentGeometry>())
+    if (const auto geometry = findComponent<AComponentGeometry>(); geometry)
     {
         float angle = (math::PI / 180.0f) * geometry->angle() * 5.0f;
         const float range = math::PI * 0.4f;
@@ -187,7 +187,7 @@ bool AComponentCling::runBall()
     }
 
     
-    if (const auto body = mBall->findComponent<AComponentBody>())
+    if (const auto body = mBall->findComponent<AComponentBody>(); body)
     {
         body->applyImpulse(force, {0.0f, 0.0f});
         body->setBallSpeed(ball->speedBall());
